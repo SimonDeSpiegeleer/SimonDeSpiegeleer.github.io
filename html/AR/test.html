@@ -3,7 +3,10 @@
 <script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
 <body style='margin : 0px; overflow: hidden;'>
 <a-scene embedded artoolkit='sourceType: webcam;'>
-    <a-box position='0 0 0' material='opacity: 0.5;'></a-box>
+    <a-entity camera>
+        <a-box position='0 0 0' material='opacity: 0.5;'></a-box>
+    </a-entity>
     <a-marker-camera preset='hiro'></a-marker-camera>
+
 </a-scene>
 </body>
