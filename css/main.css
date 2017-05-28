@@ -1,8 +1,8 @@
 p {
-    font-size: large;
+    font-size: x-large;
 }
 a {
-    font-size: large;
+    font-size: x-large;
 }
 
 .standaard{
@@ -14,3 +14,8 @@ a {
     height: 500px;
     width: 700px;
 }
+
+.AR.a-enter-vr {
+    display: none;
+}
+
