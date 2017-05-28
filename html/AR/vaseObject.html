@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vase</title>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<a-scene embedded artoolkit='sourceType: webcam;'>
+
+    <a-assets>
+        <a-asset-item id="vans-obj" src="../../files/vase/flower-vase.obj"></a-asset-item>
+        <a-asset-item id="vans-mtl" src="../../files/vase/flower-vase.mtl"></a-asset-item>
+    </a-assets>
+    <a-entity>
+        <a-obj-model position="0 0.5 0" src="#vans-obj" mtl="#vans-mtl" scale="0.5 0.5 0.5"></a-obj-model>
+    </a-entity>
+
+    <a-marker-camera preset='hiro'></a-marker-camera>
+</a-scene>
+
+</body>
+</html>
